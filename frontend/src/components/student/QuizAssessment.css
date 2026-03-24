@@ -1,0 +1,132 @@
+.assessment-container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.quiz-card {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+}
+
+.result-card {
+    max-width: 500px;
+    padding: 50px;
+    text-align: center;
+}
+
+.result-icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.score-display {
+    margin: 30px 0;
+}
+
+.score-num {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #48bb78;
+}
+
+.ai-feedback-box {
+    background: rgba(102, 126, 234, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.ai-feedback-box h4 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.questions-list {
+    margin: 40px 0;
+}
+
+.question-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.q-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.option-btn {
+    padding: 15px;
+    border: 2px solid #edf2f7;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+    background: white;
+    font-weight: 500;
+}
+
+.option-btn:hover {
+    border-color: #667eea;
+    background: #f8fafc;
+}
+
+.option-btn.selected {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.1rem;
+}
+
+.quizzes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.quiz-card-mini {
+    padding: 30px;
+    transition: transform 0.3s;
+}
+
+.quiz-card-mini:hover {
+    transform: translateY(-5px);
+}
+
+.subject-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.back-link {
+    background: none;
+    border: none;
+    color: #718096;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}

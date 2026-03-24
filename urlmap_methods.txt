@@ -1,0 +1,27 @@
+/static/<path:filename> {'HEAD', 'GET', 'OPTIONS'}
+/api/login {'POST', 'OPTIONS'}
+/api/register {'POST', 'OPTIONS'}
+/api/users {'HEAD', 'GET', 'OPTIONS'}
+/api/upload/notes {'POST', 'OPTIONS'}
+/api/upload/video {'POST', 'OPTIONS'}
+/api/notes {'HEAD', 'GET', 'OPTIONS'}
+/api/videos {'HEAD', 'GET', 'OPTIONS'}
+/api/content/verify {'POST', 'OPTIONS'}
+/api/download/notes/<filename> {'HEAD', 'GET', 'OPTIONS'}
+/api/download/videos/<filename> {'HEAD', 'GET', 'OPTIONS'}
+/api/liveclass/start {'POST', 'OPTIONS'}
+/api/liveclass {'HEAD', 'GET', 'OPTIONS'}
+/api/liveclass/end {'POST', 'OPTIONS'}
+/api/chat/send {'POST', 'OPTIONS'}
+/api/chat/history/<room> {'HEAD', 'GET', 'OPTIONS'}
+/api/quizzes/create {'POST', 'OPTIONS'}
+/api/coding/problems {'HEAD', 'GET', 'OPTIONS'}
+/api/quizzes {'HEAD', 'GET', 'OPTIONS'}
+/api/assessment/submit {'POST', 'OPTIONS'}
+/api/coding/evaluate {'POST', 'OPTIONS'}
+/api/ai/chat {'POST', 'OPTIONS'}
+/api/assessment/update {'POST', 'OPTIONS'}
+/api/teacher/stats/<teacher_id> {'HEAD', 'GET', 'OPTIONS'}
+/api/forgot-password {'POST', 'OPTIONS'}
+/api/profile/<role>/<user_id> {'HEAD', 'GET', 'OPTIONS'}
+/api/profile/update {'POST', 'OPTIONS'}

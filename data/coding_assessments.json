@@ -1,0 +1,47 @@
+[
+  {
+    "id": "84f3f3d6",
+    "student_id": "C001",
+    "language": "Python",
+    "problem_title": "Sum of Two Numbers",
+    "score": 86,
+    "passed": true,
+    "ai_feedback": "Great implementation! Your solution for 'Sum of Two Numbers' looks efficient and well-structured.",
+    "suggestions": [
+      "Consider adding comments for better readability.",
+      "Check for edge cases like null or empty inputs.",
+      "You could further optimize the space complexity."
+    ],
+    "timestamp": "2026-03-04T15:23:47.169323"
+  },
+  {
+    "id": "0908b674",
+    "student_id": "C001",
+    "language": "Python",
+    "problem_title": "Sum of Two Numbers",
+    "score": 99,
+    "passed": true,
+    "ai_feedback": "Great implementation! Your solution for 'Sum of Two Numbers' looks efficient and well-structured.",
+    "suggestions": [
+      "Consider adding comments for better readability.",
+      "Check for edge cases like null or empty inputs.",
+      "You could further optimize the space complexity."
+    ],
+    "timestamp": "2026-03-04T15:23:56.534288"
+  },
+  {
+    "id": "e4f2f3a8",
+    "student_id": "C001",
+    "student_name": "Frantaro",
+    "language": "Java",
+    "problem_title": "Sum of Two Numbers",
+    "score": 85,
+    "passed": true,
+    "ai_feedback": "Great attempt!",
+    "suggestions": [
+      "Try to improve variable names",
+      "Add more comments"
+    ],
+    "timestamp": "2026-03-04T16:18:03.626621"
+  }
+]

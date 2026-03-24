@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "subject": "Mathematics",
+    "standard": "12",
+    "title": "Calculus Basics",
+    "questions": [
+      {
+        "q": "What is the derivative of x^2?",
+        "options": [
+          "x",
+          "2x",
+          "x^3",
+          "2"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Integrate 1/x",
+        "options": [
+          "x",
+          "ln(x)",
+          "e^x",
+          "x^2"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+]

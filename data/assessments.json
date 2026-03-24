@@ -1,0 +1,24 @@
+[
+  {
+    "id": "99546006",
+    "student_id": "S001",
+    "student_name": "Mary Student",
+    "quiz_id": 1,
+    "subject": "Mathematics",
+    "standard": "12",
+    "score": 85,
+    "ai_feedback": "Good attempt, needs more practice in core areas.",
+    "timestamp": "2026-02-21T16:36:51.901612"
+  },
+  {
+    "id": "46b2f775",
+    "student_id": "S001",
+    "student_name": "Mary Student",
+    "quiz_id": 1,
+    "subject": "Mathematics",
+    "standard": "12",
+    "score": 50.0,
+    "ai_feedback": "Good attempt, needs more practice in core areas.",
+    "timestamp": "2026-02-26T23:22:04.318437"
+  }
+]

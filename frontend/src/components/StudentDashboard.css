@@ -1,0 +1,47 @@
+/* Student Dashboard uses same base styles as Teacher Dashboard */
+
+.student-avatar {
+    background: var(--secondary-gradient) !important;
+}
+
+.student-badge {
+    background: var(--secondary-gradient) !important;
+}
+
+.student-banner {
+    background: var(--secondary-gradient) !important;
+}
+
+.motivational-card {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(245, 87, 108, 0.1) 100%);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    padding: 32px;
+    text-align: center;
+}
+
+.motivational-card h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.motivational-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.tip-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--accent-purple);
+    font-weight: 600;
+}
+
+.tip-icon {
+    font-size: 24px;
+}

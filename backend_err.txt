@@ -1,0 +1,10 @@
+Server initialized for gevent.
+ * Restarting with stat
+Server initialized for gevent.
+ * Debugger is active!
+ * Debugger PIN: 483-638-910
+ * Detected change in 'D:\\project 22\\backend\\app.py', reloading
+ * Restarting with stat
+Server initialized for gevent.
+ * Debugger is active!
+ * Debugger PIN: 483-638-910

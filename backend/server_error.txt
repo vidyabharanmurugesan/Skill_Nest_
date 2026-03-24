@@ -1,0 +1,135 @@
+Server initialized for gevent.
+ * Restarting with stat
+Server initialized for gevent.
+ * Debugger is active!
+ * Debugger PIN: 144-811-177
+Traceback (most recent call last):
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1458, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\project 22\backend\app.py", line 1023, in get_teacher_stats
+    unique_students.add(p.get('user_id'))
+                        ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1458, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\project 22\backend\app.py", line 1023, in get_teacher_stats
+    unique_students.add(p.get('user_id'))
+                        ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1458, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\project 22\backend\app.py", line 1023, in get_teacher_stats
+    unique_students.add(p.get('user_id'))
+                        ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+ * Detected change in 'D:\\project 22\\backend\\app.py', reloading
+ * Restarting with stat
+Server initialized for gevent.
+ * Debugger is active!
+ * Debugger PIN: 144-811-177
+ * Detected change in 'D:\\project 22\\backend\\app.py', reloading
+ * Restarting with stat
+Server initialized for gevent.
+ * Debugger is active!
+ * Debugger PIN: 144-811-177
+Traceback (most recent call last):
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1458, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\project 22\backend\app.py", line 1029, in get_teacher_stats
+    unique_students.add(p.get('user_id'))
+                        ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+ * Detected change in 'D:\\project 22\\backend\\app.py', reloading
+ * Restarting with stat
+Server initialized for gevent.
+ * Debugger is active!
+ * Debugger PIN: 144-811-177
+ * Detected change in 'D:\\project 22\\backend\\app.py', reloading
+ * Restarting with stat
+Server initialized for gevent.
+ * Debugger is active!
+ * Debugger PIN: 144-811-177
+jzDV_I1cQnDj8w8IAAAA: Sending packet OPEN data {'sid': 'jzDV_I1cQnDj8w8IAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+13liArbKrctVP5BMAAAB: Sending packet OPEN data {'sid': '13liArbKrctVP5BMAAAB', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+13liArbKrctVP5BMAAAB: Received packet MESSAGE data 0
+emitting event "connected" to 50HSvLAEHFcm5npRAAAC [/]
+13liArbKrctVP5BMAAAB: Sending packet MESSAGE data 2["connected",{"data":"Connected to SkillNest"}]
+13liArbKrctVP5BMAAAB: Sending packet MESSAGE data 0{"sid":"50HSvLAEHFcm5npRAAAC"}
+13liArbKrctVP5BMAAAB: Received request to upgrade to websocket
+13liArbKrctVP5BMAAAB: Upgrade to websocket successful
+13liArbKrctVP5BMAAAB: Received packet MESSAGE data 1
+jzDV_I1cQnDj8w8IAAAA: Sending packet PING data None
+jzDV_I1cQnDj8w8IAAAA: Client is gone, closing socket
+jzDV_I1cQnDj8w8IAAAA: Client is gone, closing socket
+ * Detected change in 'D:\\project 22\\backend\\app.py', reloading
+ * Restarting with stat
+Server initialized for gevent.
+ * Debugger is active!
+ * Debugger PIN: 144-811-177
+ * Detected change in 'D:\\project 22\\backend\\app.py', reloading
+ * Restarting with stat
+Server initialized for gevent.
+ * Debugger is active!
+ * Debugger PIN: 144-811-177

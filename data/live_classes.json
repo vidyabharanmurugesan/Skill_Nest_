@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "teacher_id": "T001",
+    "title": "tamil",
+    "status": "ended",
+    "started_at": "2026-02-26T23:07:45.964333",
+    "participants": [],
+    "ended_at": "2026-02-26T23:09:01.474434"
+  },
+  {
+    "id": 2,
+    "teacher_id": "T001",
+    "title": "tamil",
+    "status": "ended",
+    "started_at": "2026-02-26T23:09:07.636905",
+    "participants": [],
+    "ended_at": "2026-02-26T23:09:13.410654"
+  },
+  {
+    "id": 3,
+    "teacher_id": "T001",
+    "title": "tamil",
+    "status": "active",
+    "started_at": "2026-02-26T23:09:37.885140",
+    "participants": []
+  },
+  {
+    "id": 4,
+    "teacher_id": "T001",
+    "title": "123",
+    "status": "active",
+    "started_at": "2026-02-26T23:10:02.422192",
+    "participants": []
+  },
+  {
+    "id": 5,
+    "teacher_id": "T001",
+    "title": "tamil",
+    "status": "ended",
+    "started_at": "2026-02-26T23:13:04.028393",
+    "participants": [],
+    "ended_at": "2026-02-26T23:13:11.124852"
+  },
+  {
+    "id": 6,
+    "teacher_id": "T001",
+    "title": "tamil",
+    "subject": "Tamil",
+    "standard": "1",
+    "status": "ended",
+    "started_at": "2026-02-26T23:23:19.432146",
+    "participants": [],
+    "ended_at": "2026-02-26T23:26:33.823876"
+  },
+  {
+    "id": 7,
+    "teacher_id": "T001",
+    "title": "tamil",
+    "subject": "Tamil",
+    "standard": "1",
+    "status": "active",
+    "started_at": "2026-02-26T23:27:25.077464",
+    "participants": []
+  },
+  {
+    "id": 8,
+    "teacher_id": "T001",
+    "title": "english",
+    "subject": "Tamil",
+    "standard": "1",
+    "status": "active",
+    "started_at": "2026-03-04T17:30:22.348945",
+    "participants": [
+      {
+        "user_id": "T001",
+        "user_name": "John Teacher",
+        "joined_at": "2026-03-04T17:30:22.631027"
+      }
+    ]
+  }
+]

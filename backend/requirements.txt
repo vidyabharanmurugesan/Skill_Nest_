@@ -1,0 +1,13 @@
+Flask==3.0.0
+flask-cors==4.0.0
+Flask-SocketIO==5.3.5
+python-socketio==5.10.0
+werkzeug==3.0.1
+deep-translator==1.11.4
+gevent==24.2.1
+python-dotenv==1.0.0
+# pandas>=2.0.0
+# openpyxl>=3.1.0
+openai==1.6.1
+python-dotenv==1.0.0
+pdftools==0.1.0

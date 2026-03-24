@@ -1,0 +1,17 @@
+cd "d:\project 22\frontend"
+npm start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+in login page remove the excel file it is used for store the login and registation data storage but it is making the login page problem for this remove the excel and login and registation page data store in json it self

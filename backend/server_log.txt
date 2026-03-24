@@ -1,0 +1,102 @@
+Server initialized for gevent.
+Starting SkillNest Backend Server...
+Server running on http://localhost:5000
+Cleaning up orphaned file references...
+[OK] Database cleanup complete!
+ * Restarting with stat
+Server initialized for gevent.
+Starting SkillNest Backend Server...
+Server running on http://localhost:5000
+Cleaning up orphaned file references...
+[OK] Database cleanup complete!
+ * Debugger is active!
+ * Debugger PIN: 144-811-177
+Exception in thread Thread-1 (run_server):
+Traceback (most recent call last):
+  File "C:\Program Files\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask_socketio\__init__.py", line 714, in run_server
+    self.wsgi_server.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ~~~~~~~~~~^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('0.0.0.0', 5000)
+ * Detected change in 'D:\\project 22\\backend\\app.py', reloading
+ * Restarting with stat
+Server initialized for gevent.
+Starting SkillNest Backend Server...
+Server running on http://localhost:5000
+Cleaning up orphaned file references...
+[OK] Database cleanup complete!
+ * Debugger is active!
+ * Debugger PIN: 144-811-177
+Exception in thread Thread-1 (run_server):
+Traceback (most recent call last):
+  File "C:\Program Files\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\flask_socketio\__init__.py", line 714, in run_server
+    self.wsgi_server.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ~~~~~~~~~~^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\vidya\AppData\Roaming\Python\Python314\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('0.0.0.0', 5000)
+ * Detected change in 'D:\\project 22\\backend\\app.py', reloading
+ * Restarting with stat
+Server initialized for gevent.
+Starting SkillNest Backend Server...
+Server running on http://localhost:5000
+Traceback (most recent call last):
+  File "D:\project 22\backend\app.py", line 881, in <module>
+    init_profiles_excel()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\project 22\backend\app.py", line 47, in init_profiles_excel
+    print("\u2705 Created profiles.xlsx with Teacher/Student sheets")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>

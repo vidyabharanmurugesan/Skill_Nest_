@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "tamil",
+    "description": "tamil",
+    "filename": "20260226_231333_20260225_223713_20260213_180354_NexGen_Hackathon_food_list_2.docx",
+    "filepath": "uploads\\notes\\20260226_231333_20260225_223713_20260213_180354_NexGen_Hackathon_food_list_2.docx",
+    "teacher_id": "T001",
+    "uploaded_at": "2026-02-26T23:13:33.179552"
+  },
+  {
+    "id": 2,
+    "title": "tamil",
+    "description": "kjaskjf",
+    "filename": "20260226_232225_20260225_223713_20260213_180354_NexGen_Hackathon_food_list_2.docx",
+    "filepath": "uploads\\notes\\20260226_232225_20260225_223713_20260213_180354_NexGen_Hackathon_food_list_2.docx",
+    "teacher_id": "T001",
+    "subject": "Tamil",
+    "standard": "1",
+    "uploaded_at": "2026-02-26T23:22:25.111794",
+    "status": "verified"
+  },
+  {
+    "id": 3,
+    "title": "maths",
+    "description": "maths game",
+    "filename": "20260304_161828_20260227_001919_20260227_001134_20260225_223713_20260213_180354_NexGen_Hackathon_food_list_2.docx",
+    "filepath": "uploads\\notes\\20260304_161828_20260227_001919_20260227_001134_20260225_223713_20260213_180354_NexGen_Hackathon_food_list_2.docx",
+    "teacher_id": "T001",
+    "subject": "Tamil",
+    "standard": "1",
+    "uploaded_at": "2026-03-04T16:18:28.049621",
+    "status": "verified"
+  },
+  {
+    "id": 4,
+    "title": "tamil",
+    "description": "tamil",
+    "filename": "20260304_163403_20260227_001919_20260227_001134_20260225_223713_20260213_180354_NexGen_Hackathon_food_list_2.docx",
+    "filepath": "uploads\\notes\\20260304_163403_20260227_001919_20260227_001134_20260225_223713_20260213_180354_NexGen_Hackathon_food_list_2.docx",
+    "teacher_id": "T001",
+    "subject": "Tamil",
+    "standard": "1",
+    "uploaded_at": "2026-03-04T16:34:03.046629",
+    "status": "pending"
+  }
+]
