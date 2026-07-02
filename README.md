@@ -219,3 +219,4 @@ Built with ❤️ for rural education
 ---
 
 **Note**: Make sure both backend and frontend servers are running simultaneously for the application to work properly.
+
