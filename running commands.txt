@@ -1,0 +1,5 @@
+cd "d:\project 22\backend"
+python start_backend.py
+
+cd "d:\project 22\frontend"
+npm start
