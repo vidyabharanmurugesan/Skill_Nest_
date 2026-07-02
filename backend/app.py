@@ -17,9 +17,7 @@ import json
 from datetime import datetime
 from werkzeug.utils import secure_filename # type: ignore
 import secrets
-# import pandas as pd
-# from openpyxl import load_workbook
-# from openpyxl.styles import Font, PatternFill, Alignment
+
 
 import sys
 import io
@@ -32,33 +30,6 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(16)
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 500 * 1024 * 1024  # 500MB max file size
-# def init_profiles_excel():
-#     """Initialize profiles Excel with Teachers and Students sheets"""
-#     if not os.path.exists(app.config['PROFILES_EXCEL']):
-#         with pd.ExcelWriter(app.config['PROFILES_EXCEL'], engine='openpyxl') as writer:
-#             # Empty DataFrames with LinkedIn-style structures
-#             teacher_cols = ['id', 'name', 'headline', 'about', 'experience', 'education', 'skills', 'location']
-#             student_cols = ['id', 'name', 'headline', 'about', 'education', 'projects', 'skills', 'location']
-#             
-#             pd.DataFrame(columns=teacher_cols).to_excel(writer, sheet_name='Teachers', index=False)
-#             pd.DataFrame(columns=student_cols).to_excel(writer, sheet_name='Students', index=False)
-#             
-#             # Add demo profile for Teacher
-#             demo_teacher = pd.DataFrame([{
-#                 'id': 'T001',
-#                 'name': 'John Teacher',
-#                 'headline': 'Senior Mathematics Educator | 10+ Years Experience',
-#                 'about': 'Passionate about simplifying complex calculus for rural students.',
-#                 'experience': '10 years at SkillNest Academy',
-#                 'education': 'M.Sc Mathematics, University of Madras',
-#                 'skills': 'Calculus, Algebra, Pedagogy',
-#                 'location': 'Chennai, Tamil Nadu'
-#             }])
-#             demo_teacher.to_excel(writer, sheet_name='Teachers', index=False, startrow=1, header=False)
-#             
-#         print("[OK] Created profiles.xlsx with Teacher/Student sheets")
-
-
 
 # Create upload directories
 os.makedirs(os.path.join(app.config['UPLOAD_FOLDER'], 'notes'), exist_ok=True)
@@ -96,6 +67,19 @@ def update_user_last_login(email):
         save_to_file('users.json', users)
     except Exception as e:
         print(f"Error updating last login: {e}")
+
+def get_next_user_id(role, users_list):
+    prefix = 'T' if role == 'teacher' else 'S'
+    role_users = [u for u in users_list if u.get('role') == role]
+    max_num = 0
+    for u in role_users:
+        try:
+            num = int(u.get('id', '')[1:])
+            if num > max_num:
+                max_num = num
+        except:
+            pass
+    return f"{prefix}{int(max_num) + 1:03d}"
 
 # Authentication endpoints
 @app.route('/api/login', methods=['POST'])
@@ -144,23 +128,8 @@ def register():
         
         if existing:
             return jsonify({'success': False, 'message': 'User already exists'}), 400
-    
-
-    
-        def get_next_user_id(role, users_list):
-            prefix = 'T' if role == 'teacher' else 'S'
-            role_users = [u for u in users_list if u.get('role') == role]
-            max_num = 0
-            for u in role_users:
-                try:
-                    num = int(u.get('id', '')[1:])
-                    if num > max_num:
-                        max_num = num
-                except:
-                    pass
-            return f"{prefix}{int(max_num) + 1:03d}"
-    
-        # Generate ID with correct signature (needs users list)
+        
+        # Generate ID with global helper
         user_id = get_next_user_id(role, users)
         registered_at = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         
@@ -188,6 +157,67 @@ def register():
         })
     except Exception as e:
         return jsonify({'success': False, 'message': f'Failed to register user: {str(e)}'}), 500
+
+@app.route('/api/auth/google', methods=['POST'])
+def google_auth():
+    try:
+        data = request.json
+        email = data.get('email', '').lower().strip()
+        name = data.get('name', 'Google User')
+        role = data.get('role', 'student')
+        
+        users = load_from_file('users.json')
+        user_row = next((u for u in users if u.get('email') == email), None)
+        
+        if not user_row:
+            # Register new Google user
+            user_id = get_next_user_id(role, users)
+            registered_at = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            
+            user_row = {
+                'id': user_id,
+                'email': email,
+                'password': secrets.token_hex(8),  # random password for google sign-in users
+                'name': name,
+                'role': role,
+                'standard': None,
+                'registered_at': registered_at,
+                'last_login': registered_at
+            }
+            users.append(user_row)
+            save_to_file('users.json', users)
+        else:
+            # Update last login
+            user_row['last_login'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            save_to_file('users.json', users)
+            
+        return jsonify({
+            'success': True,
+            'user': {
+                'email': user_row.get('email'),
+                'name': user_row.get('name'),
+                'role': user_row.get('role'),
+                'id': user_row.get('id')
+            }
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'message': str(e)}), 500
+
+@app.route('/api/config/firebase', methods=['GET'])
+def get_firebase_config():
+    try:
+        return jsonify({
+            'apiKey': os.getenv('VITE_FIREBASE_API_KEY'),
+            'authDomain': os.getenv('VITE_FIREBASE_AUTH_DOMAIN'),
+            'databaseURL': os.getenv('VITE_FIREBASE_DATABASE_URL'),
+            'projectId': os.getenv('VITE_FIREBASE_PROJECT_ID'),
+            'storageBucket': os.getenv('VITE_FIREBASE_STORAGE_BUCKET'),
+            'messagingSenderId': os.getenv('VITE_FIREBASE_MESSAGING_SENDER_ID'),
+            'appId': os.getenv('VITE_FIREBASE_APP_ID'),
+            'measurementId': os.getenv('VITE_FIREBASE_MEASUREMENT_ID')
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/api/users', methods=['GET'])
 def get_users():

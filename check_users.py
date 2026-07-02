@@ -1,13 +1,27 @@
-import pandas as pd
+import json
 import os
-
-users_excel = 'd:/project 22/backend/data/users.xlsx'
 import sys
-if os.path.exists(users_excel):
+import csv
+
+users_json_path = 'd:/project 22/backend/data/users.json'
+
+if os.path.exists(users_json_path):
     try:
-        df = pd.read_excel(users_excel, sheet_name='Users')
-        df.to_csv(sys.stdout, index=False)
+        with open(users_json_path, 'r', encoding='utf-8') as f:
+            users = json.load(f)
+        
+        # Write CSV output to stdout
+        if users:
+            writer = csv.writer(sys.stdout)
+            # Write headers
+            headers = users[0].keys()
+            writer.writerow(headers)
+            # Write rows
+            for user in users:
+                writer.writerow(user.values())
+        else:
+            print("No users found in JSON database.")
     except Exception as e:
         print(f"Error reading users: {e}")
 else:
-    print("Users Excel file not found.")
+    print("Users JSON file not found.")
